@@ -9,6 +9,8 @@ class Wine < Formula
   homepage "https://www.winehq.org/"
   license "GPL-2.0-or-later"
   head "https://gitlab.winehq.org/wine/wine.git", branch: "master"
+  
+  disable! date: "2026-09-09", because: :does_not_build
 
   stable do
     url "https://dl.winehq.org/wine/source/7.0/wine-7.0.1.tar.xz"
